@@ -33,7 +33,7 @@ const cardVariants = {
   }
 };
 
-const socket = initSocket('http://localhost:3001');
+const socket = initSocket('https://landslidedisasterriskmanagmentbackend.onrender.com');
 
 const Dashboard = () => {
   const [alerts, setAlerts] = useState([]);
