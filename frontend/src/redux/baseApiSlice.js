@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    baseUrl : "http://localhost:3001"
+    baseUrl : "https://landslidedisasterriskmanagmentbackend.onrender.com"
 }
 const baseSlice = createSlice({
     name : "base",
