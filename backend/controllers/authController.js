@@ -154,7 +154,11 @@ export const updateUser = async(req,res)=>{
 }
 export const logoutRoute = async(req,res) =>{
     try {
-        res.clearCookie('token')
+        res.clearCookie('token' , {
+          httpOnly: true,
+  sameSite: 'None',
+  secure: true,
+        })
         res.status(200).json({
             message : "User logout Sucessfully"
         })
