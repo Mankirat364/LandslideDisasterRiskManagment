@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+body,html{
+    font-family: "Montserrat", sans-serif;
+}
+.line-height-normal{
+    line-height: 1;
+}
+@keyframes marquee-ltr {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%); 
+    }
+  }
+  
+  .animate-marquee-ltr {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee-ltr 15s linear infinite;
+  }
+
+  @media screen and (max-width: 768px) {
+    .selected{
+      margin-top: 84vw;
+    }
+    .leaflet-container{
+      width: 100% !important;
+      height: 50vh !important;
+    }
+  }
