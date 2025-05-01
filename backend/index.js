@@ -20,7 +20,7 @@ initSocket(server)
 const PORT = process.env.PORT || 3001
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173','https://landslidedisasterriskmanagmentfrontend.onrender.com'],
   credentials: true
 }))
 app.use(express.json())
